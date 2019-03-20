@@ -1,0 +1,52 @@
+LOG:  duration: 6.235 ms  statement: SELECT * FROM bairro WHERE cidade_codigo = 16;
+LOG:  duration: 15.124 ms  statement: SELECT * FROM bairro WHERE cidade_codigo = 16;
+ERROR:  deadlock detected
+LINE 1: SELECT * FROM bairro WHERE cidade_codigo = 16;
+                      ^
+DETAIL:  Process 31835 waits for AccessShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31835.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+LINE 1: SELECT * FROM bairro WHERE cidade_codigo = 16;
+                      ^
+DETAIL:  Process 31845 waits for AccessShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31845.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+LINE 1: SELECT * FROM bairro WHERE cidade_codigo = 16;
+                      ^
+DETAIL:  Process 31926 waits for AccessShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31926.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+LINE 1: SELECT * FROM bairro WHERE cidade_codigo = 16;
+                      ^
+DETAIL:  Process 32052 waits for AccessShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32052.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+LINE 1: SELECT * FROM bairro WHERE cidade_codigo = 16;
+                      ^
+DETAIL:  Process 32241 waits for AccessShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32241.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+LINE 1: SELECT * FROM bairro WHERE cidade_codigo = 16;
+                      ^
+DETAIL:  Process 32383 waits for AccessShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32383.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+LINE 1: SELECT * FROM bairro WHERE cidade_codigo = 16;
+                      ^
+DETAIL:  Process 32451 waits for AccessShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32451.
+HINT:  See server log for query details.
+LOG:  duration: 2037.875 ms  statement: SELECT * FROM bairro WHERE cidade_codigo = 16;

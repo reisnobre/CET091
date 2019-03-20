@@ -1,0 +1,22 @@
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:5: LOG:  duration: 295.835 ms  statement: drop index cidade_codigo;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:6: LOG:  duration: 338.442 ms  statement: select * from bairro;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:9: WARNING:  hash indexes are not WAL-logged and their use is discouraged
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:9: LOG:  duration: 233.033 ms  statement: create index cidade_codigo on bairro using hash(cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:10: LOG:  duration: 13.238 ms  statement: select * from bairro;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:12: LOG:  duration: 27.883 ms  statement: drop index cidade_codigo;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:16: LOG:  duration: 138.572 ms  statement: create index cidade_codigo on bairro using btree(cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:17: LOG:  duration: 32.071 ms  statement: select * from bairro;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:24: LOG:  duration: 30.508 ms  statement: drop index cidade_codigo;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:25: LOG:  duration: 55.797 ms  statement: select * from bairro where cidade_codigo = 16;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:27: LOG:  duration: 131.118 ms  statement: select * from bairro left join cidade on (cidade.cidade_codigo = bairro.cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:28: LOG:  duration: 22.850 ms  statement: select * from cidade left join bairro on (cidade.cidade_codigo = bairro.cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:31: WARNING:  hash indexes are not WAL-logged and their use is discouraged
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:31: LOG:  duration: 56.017 ms  statement: create index cidade_codigo on bairro using hash(cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:32: LOG:  duration: 0.626 ms  statement: select * from bairro where cidade_codigo = 16;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:34: LOG:  duration: 51.578 ms  statement: select * from bairro left join cidade on (cidade.cidade_codigo = bairro.cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:35: LOG:  duration: 22.950 ms  statement: select * from cidade left join bairro on (cidade.cidade_codigo = bairro.cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:38: LOG:  duration: 39.832 ms  statement: drop index cidade_codigo;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:41: LOG:  duration: 127.604 ms  statement: create index cidade_codigo on bairro using btree(cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:42: LOG:  duration: 0.711 ms  statement: select * from bairro where cidade_codigo = 16;
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:45: LOG:  duration: 54.073 ms  statement: select * from bairro left join cidade on (cidade.cidade_codigo = bairro.cidade_codigo);
+psql:/media/work/uesc/db_2/ceps/querys_wt.sql:46: LOG:  duration: 22.975 ms  statement: select * from cidade left join bairro on (cidade.cidade_codigo = bairro.cidade_codigo);

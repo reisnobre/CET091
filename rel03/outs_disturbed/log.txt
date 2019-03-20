@@ -1,0 +1,8 @@
+LOG:  duration: 37.896 ms  statement: DROP INDEX tp_id_index;
+LOG:  duration: 83.417 ms  statement: CREATE INDEX tp_id_index ON t_pescador USING btree(tp_id);
+LOG:  duration: 149.042 ms  statement: CLUSTER t_pescador USING tp_id_index;
+LOG:  duration: 1279.398 ms  statement: ANALYZE;
+LOG:  duration: 95.474 ms  statement: REINDEX INDEX tp_id_index;
+LOG:  duration: 11.507 ms  statement: VACUUM t_pescador;
+ERROR:  "t_pescador" is not an index
+HINT:  Use DROP TABLE to remove a table.

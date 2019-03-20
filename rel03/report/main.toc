@@ -1,0 +1,10 @@
+\select@language {brazilian}
+\contentsline {section}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{3}
+\contentsline {section}{\numberline {2}Materiais de M\IeC {\'e}todos}{3}
+\contentsline {subsection}{\numberline {2.1}Ambiente}{3}
+\contentsline {subsection}{\numberline {2.2}Metodologia}{4}
+\contentsline {section}{\numberline {3}Metodologia}{4}
+\contentsline {subsection}{\numberline {3.1}Clusters}{4}
+\contentsline {subsection}{\numberline {3.2}Reindex}{5}
+\contentsline {subsection}{\numberline {3.3}Vacuum}{6}
+\contentsline {section}{\numberline {4}Considera\IeC {\c c}\IeC {\~o}es finais e resultados}{7}

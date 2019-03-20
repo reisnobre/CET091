@@ -1,0 +1,114 @@
+===== Test with hash code: 511f5e30a4a54aab076b0473fffc0df5 =====
+
+[tp_id, tp_nome, tp_sexo]
+0.326293, 0.0505184, 0.583291
+Tempo médio: 0.4739
+
+[tp_id, tp_nome, tp_sexo]
+1.0, -0.00988056, 0.576761
+Tempo médio: 0.48039999999999994
+
+[tp_id, tp_nome, tp_sexo]
+1.0, -0.00988056, 0.576761
+Tempo médio: 0.47540000000000004
+
+[tp_id, tp_nome, tp_sexo]
+1.0, -0.00988056, 0.576761
+Tempo médio: 0.4659
+
+
+===== Test with hash code: b9b159c59699fa2efe5358898698684d =====
+
+[tp_id, tp_nome, tp_sexo]
+1.0, -0.00988056, 0.576761
+Tempo médio: 0.47140000000000004
+
+[tp_id, tp_nome, tp_sexo]
+1.0, -0.00988056, 0.576761
+Tempo médio: 0.4729
+
+[tp_id, tp_nome, tp_sexo]
+1.0, -0.00988056, 0.576761
+Tempo médio: 0.4685
+
+[tp_id, tp_nome, tp_sexo]
+1.0, -0.00988056, 0.576761
+Tempo médio: 0.4545
+
+
+===== Test with hash code: 61668a85d6e9c4145c986af64581f3c3 =====
+
+[tp_id, tp_nome, tp_sexo]
+1.0, -0.00988056, 0.576761
+Tempo médio: 0.47879999999999995
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.576761, -0.00988056
+Tempo médio: 0.4708
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.576761, -0.00988056
+Tempo médio: 0.7254
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.576761, -0.00988056
+Tempo médio: 0.6640999999999999
+
+== After disturb
+===== Test with hash code: 41085a12c7bc342aa05ce1226049804b =====
+
+[tp_id, tp_nome, tp_sexo]
+0.480404, 0.55122, -0.0121955
+Tempo médio: 0.5136
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.5094
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.5266
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.5027
+
+
+===== Test with hash code: bd5feb7164288a2f61a46e4ed068cfd2 =====
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.506
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.4986999999999999
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.5063
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.48840000000000006
+
+
+===== Test with hash code: 9ba4a83f6bca649c4ad6ea863bc8ed82 =====
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.5059
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.5011
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.5065999999999999
+
+[tp_id, tp_nome, tp_sexo]
+1.0, 0.516582, 0.0340151
+Tempo médio: 0.5093
+
+

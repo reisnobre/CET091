@@ -1,0 +1,96 @@
+DROP INDEX
+                         QUERY PLAN                          
+-------------------------------------------------------------
+ Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+(1 row)
+
+CREATE INDEX
+                         QUERY PLAN                          
+-------------------------------------------------------------
+ Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+(1 row)
+
+DROP INDEX
+CREATE INDEX
+                         QUERY PLAN                          
+-------------------------------------------------------------
+ Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+(1 row)
+
+DROP INDEX
+                        QUERY PLAN                        
+----------------------------------------------------------
+ Seq Scan on bairro  (cost=0.00..560.89 rows=43 width=24)
+   Filter: (cidade_codigo = 16)
+(2 rows)
+
+                               QUERY PLAN                               
+------------------------------------------------------------------------
+ Hash Left Join  (cost=300.24..1185.92 rows=28871 width=53)
+   Hash Cond: (bairro.cidade_codigo = cidade.cidade_codigo)
+   ->  Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+   ->  Hash  (cost=175.66..175.66 rows=9966 width=29)
+         ->  Seq Scan on cidade  (cost=0.00..175.66 rows=9966 width=29)
+(5 rows)
+
+                               QUERY PLAN                               
+------------------------------------------------------------------------
+ Hash Right Join  (cost=300.24..1185.92 rows=28871 width=53)
+   Hash Cond: (bairro.cidade_codigo = cidade.cidade_codigo)
+   ->  Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+   ->  Hash  (cost=175.66..175.66 rows=9966 width=29)
+         ->  Seq Scan on cidade  (cost=0.00..175.66 rows=9966 width=29)
+(5 rows)
+
+CREATE INDEX
+                                 QUERY PLAN                                  
+-----------------------------------------------------------------------------
+ Bitmap Heap Scan on bairro  (cost=4.33..109.20 rows=43 width=24)
+   Recheck Cond: (cidade_codigo = 16)
+   ->  Bitmap Index Scan on cidade_codigo  (cost=0.00..4.32 rows=43 width=0)
+         Index Cond: (cidade_codigo = 16)
+(4 rows)
+
+                               QUERY PLAN                               
+------------------------------------------------------------------------
+ Hash Left Join  (cost=300.24..1185.92 rows=28871 width=53)
+   Hash Cond: (bairro.cidade_codigo = cidade.cidade_codigo)
+   ->  Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+   ->  Hash  (cost=175.66..175.66 rows=9966 width=29)
+         ->  Seq Scan on cidade  (cost=0.00..175.66 rows=9966 width=29)
+(5 rows)
+
+                               QUERY PLAN                               
+------------------------------------------------------------------------
+ Hash Right Join  (cost=300.24..1185.92 rows=28871 width=53)
+   Hash Cond: (bairro.cidade_codigo = cidade.cidade_codigo)
+   ->  Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+   ->  Hash  (cost=175.66..175.66 rows=9966 width=29)
+         ->  Seq Scan on cidade  (cost=0.00..175.66 rows=9966 width=29)
+(5 rows)
+
+DROP INDEX
+CREATE INDEX
+                                  QUERY PLAN                                   
+-------------------------------------------------------------------------------
+ Index Scan using cidade_codigo on bairro  (cost=0.29..83.03 rows=43 width=24)
+   Index Cond: (cidade_codigo = 16)
+(2 rows)
+
+                               QUERY PLAN                               
+------------------------------------------------------------------------
+ Hash Left Join  (cost=300.24..1185.92 rows=28871 width=53)
+   Hash Cond: (bairro.cidade_codigo = cidade.cidade_codigo)
+   ->  Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+   ->  Hash  (cost=175.66..175.66 rows=9966 width=29)
+         ->  Seq Scan on cidade  (cost=0.00..175.66 rows=9966 width=29)
+(5 rows)
+
+                               QUERY PLAN                               
+------------------------------------------------------------------------
+ Hash Right Join  (cost=300.24..1185.92 rows=28871 width=53)
+   Hash Cond: (bairro.cidade_codigo = cidade.cidade_codigo)
+   ->  Seq Scan on bairro  (cost=0.00..488.71 rows=28871 width=24)
+   ->  Hash  (cost=175.66..175.66 rows=9966 width=29)
+         ->  Seq Scan on cidade  (cost=0.00..175.66 rows=9966 width=29)
+(5 rows)

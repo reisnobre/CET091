@@ -1,0 +1,36 @@
+===== Test with hash code: bce2305a87b9ff8c51d2c053eb15e162 =====
+
+no_index: 9.466000000000003
+hash: 9.087599999999998
+btree: 9.160900000000002
+
+===== Test with hash code: 727c6c364d4a83e62a3ca53b75884fbc =====
+
+no_index: 12.2859
+hash: 9.581899999999997
+btree: 11.711699999999999
+
+===== Test with hash code: 3b157f83ad23bd7ea7c07b9fdcaa6aa5 =====
+
+no_index: nan
+hash: nan
+btree: nan
+
+===== Test with hash code: ebc05d44783286e3330d710b25cb81d1 =====
+
+no_index: 67.89425
+hash: 50.89375
+btree: 27.19633333333333
+
+===== Test with hash code: f1ca5b58a1c4cf3e3778b0252fdb911f =====
+
+no_index: 98.8366
+hash: 30.53225
+btree: 34.026
+
+===== Test with hash code: 8b1b3da2f072257261c667a209858739 =====
+
+no_index: 45.97575
+hash: 10.6795
+btree: 23.14833333333333
+

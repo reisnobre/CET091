@@ -1,0 +1,17 @@
+ correlation 
+-------------
+           1
+    0.516582
+   0.0340151
+(3 rows)
+
+LOG:  duration: 0.548 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.534 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.513 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.551 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.472 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.519 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.480 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.473 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.489 ms  statement: SELECT * FROM t_pescador where tp_id = 1831
+LOG:  duration: 0.487 ms  statement: SELECT * FROM t_pescador where tp_id = 1831

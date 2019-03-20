@@ -1,0 +1,9 @@
+psql:disturb.sql:1: ERROR:  table "t_pescador_back" does not exist
+psql:disturb.sql:2: LOG:  duration: 224.717 ms  statement: CREATE TABLE t_pescador_back AS SELECT * FROM t_pescador ORDER BY random() limit (SELECT (count(*)*0.25)::INTEGER FROM t_pescador);
+psql:disturb.sql:4: ERROR:  sequence "t_pescador_seq_id" does not exist
+psql:disturb.sql:5: LOG:  duration: 32.723 ms  statement: CREATE SEQUENCE t_pescador_seq_id;
+psql:disturb.sql:7: LOG:  duration: 45.997 ms  statement: ALTER TABLE t_pescador 
+ALTER COLUMN tp_id SET DEFAULT nextval('t_pescador_seq_id');
+psql:disturb.sql:8: LOG:  duration: 45.372 ms  statement: SELECT setval('t_pescador_seq_id', (SELECT max(tp_id) FROM t_pescador));
+psql:disturb.sql:9: LOG:  duration: 33.794 ms  statement: DELETE FROM t_pescador WHERE tp_id IN (SELECT tp_id from t_pescador_back);
+psql:disturb.sql:10: LOG:  duration: 34.148 ms  statement: INSERT INTO t_pescador (tp_nome, tp_sexo) (SELECT tp_nome, tp_sexo FROM t_pescador_back);

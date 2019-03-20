@@ -1,0 +1,8 @@
+slope: 0.02685394952510172
+intercept: 193.89862746219472
+r_value: 0.016291399464041227
+p_value: 0.9694590304438053
+std_err: 0.6728472934287426
+spearman: SpearmanrResult(correlation=0.0, pvalue=1.0)
+correlation: [[1.        0.0162914]
+ [0.0162914 1.       ]]

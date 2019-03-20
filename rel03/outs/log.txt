@@ -1,0 +1,156 @@
+ERROR:  index "cidade_codigo" does not exist
+ERROR:  index "cidade_codigo" does not exist
+ERROR:  index "cidade_codigo" does not exist
+WARNING:  hash indexes are not WAL-logged and their use is discouraged
+WARNING:  hash indexes are not WAL-logged and their use is discouraged
+ERROR:  index "cidade_codigo" does not exist
+LOG:  duration: 107.765 ms  statement: CREATE INDEX cidade_codigo on bairro USING btree(cidade_codigo);
+ERROR:  duplicate key value violates unique constraint "pg_class_relname_nsp_index"
+DETAIL:  Key (relname, relnamespace)=(cidade_codigo, 2200) already exists.
+ERROR:  duplicate key value violates unique constraint "pg_class_relname_nsp_index"
+DETAIL:  Key (relname, relnamespace)=(cidade_codigo, 2200) already exists.
+ERROR:  duplicate key value violates unique constraint "pg_class_relname_nsp_index"
+DETAIL:  Key (relname, relnamespace)=(cidade_codigo, 2200) already exists.
+ERROR:  index "cidade_codigo" does not exist
+LOG:  duration: 85.640 ms  statement: DROP INDEX cidade_codigo;
+ERROR:  index "cidade_codigo" does not exist
+ERROR:  index "cidade_codigo" does not exist
+WARNING:  hash indexes are not WAL-logged and their use is discouraged
+ERROR:  index "cidade_codigo" does not exist
+ERROR:  index "cidade_codigo" does not exist
+ERROR:  index "cidade_codigo" does not exist
+ERROR:  index "cidade_codigo" does not exist
+ERROR:  index "cidade_codigo" does not exist
+LOG:  duration: 199.456 ms  statement: CREATE INDEX cidade_codigo on bairro USING hash(cidade_codigo);
+ERROR:  deadlock detected
+DETAIL:  Process 31842 waits for ShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31842.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 31843 waits for ShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31843.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 31940 waits for ShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31940.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 31954 waits for ShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31954.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32004 waits for ShareLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32004.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 31820 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31813.
+Process 31813 waits for AccessExclusiveLock on relation 17285 of database 16384; blocked by process 31820.
+HINT:  See server log for query details.
+WARNING:  hash indexes are not WAL-logged and their use is discouraged
+LOG:  duration: 1007.613 ms  statement: DROP INDEX cidade_codigo;
+LOG:  duration: 1081.054 ms  statement: CREATE INDEX cidade_codigo on bairro USING hash(cidade_codigo);
+ERROR:  deadlock detected
+DETAIL:  Process 32231 waits for ShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32231.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32233 waits for ShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32233.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32262 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32262.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32267 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32267.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32317 waits for ShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32317.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32333 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32333.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32332 waits for ShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32332.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32327 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32327.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32406 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32406.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32435 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32435.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32438 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32438.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32445 waits for ShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32445.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32467 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32467.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32472 waits for ShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32472.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32473 waits for ShareLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32473.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32474 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32474.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 31813 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 31813.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32110 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32100.
+Process 32100 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32110.
+HINT:  See server log for query details.
+ERROR:  relation "cidade_codigo" already exists
+ERROR:  relation "cidade_codigo" already exists
+ERROR:  deadlock detected
+DETAIL:  Process 32100 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32180.
+Process 32180 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32100.
+HINT:  See server log for query details.
+ERROR:  deadlock detected
+DETAIL:  Process 32180 waits for AccessExclusiveLock on relation 17213 of database 16384; blocked by process 32221.
+Process 32221 waits for AccessExclusiveLock on relation 17289 of database 16384; blocked by process 32180.
+HINT:  See server log for query details.
+LOG:  duration: 4042.604 ms  statement: DROP INDEX cidade_codigo;
